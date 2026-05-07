@@ -10,6 +10,7 @@ function toDate(value) {
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ public: "/" });
+  eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
 
   eleventyConfig.addCollection("avvisi", function (collectionApi) {
     return collectionApi.getFilteredByTag("avvisi").sort(function (a, b) {
