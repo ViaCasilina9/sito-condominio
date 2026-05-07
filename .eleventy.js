@@ -61,6 +61,7 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addGlobalData("currentYear", new Date().getFullYear());
+  eleventyConfig.addGlobalData("assetVersion", Date.now().toString());
 
   return {
     dir: {
