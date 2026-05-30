@@ -23,7 +23,8 @@
           <a href="{{ '/' | relativeUrl(page.url) }}"{% if currentUrl == "/" %} aria-current="page"{% endif %}>Home</a>
           <a href="{{ '/storia/' | relativeUrl(page.url) }}"{% if currentUrl == "/storia/" %} aria-current="page"{% endif %}>Storia</a>
           <a href="{{ '/avvisi/' | relativeUrl(page.url) }}"{% if currentUrl.indexOf("/avvisi/") == 0 %} aria-current="page"{% endif %}>Avvisi</a>
-          <a href="{{ '/documenti/' | relativeUrl(page.url) }}"{% if currentUrl == "/documenti/" %} aria-current="page"{% endif %}>Documenti</a>
+          <a href="{{ '/documenti/' | relativeUrl(page.url) }}"{% if currentUrl == "/documenti/" %} aria-current="page"{% endif %}>Documenti pubblici</a>
+          <a href="{{ '/area-riservata/' | relativeUrl(page.url) }}"{% if currentUrl == "/area-riservata/" %} aria-current="page"{% endif %}>Area riservata</a>
         </nav>
       </div>
     </header>

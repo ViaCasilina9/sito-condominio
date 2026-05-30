@@ -2,6 +2,12 @@
   "name": "Via Casilina 9",
   "description": "Sito pubblico essenziale del condominio e comprensorio di Via Casilina 9.",
   "url": "https://www.viacasilina9.it",
-  "email": "",
-  "address": ""
+  "email": "postmaster@viacasilina9.it",
+  "address": "",
+  "reservedArea": {
+    "url": "https://documenti.viacasilina9.it",
+    "registrationFormUrl": "https://forms.gle/zKkp5akqcR1q5rEZ8",
+    "requestRecipientEmail": "postmaster@viacasilina9.it",
+    "contactEmail": "postmaster@viacasilina9.it"
+  }
 }

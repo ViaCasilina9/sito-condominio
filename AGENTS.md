@@ -8,13 +8,23 @@
 - Il dominio senza www e' `https://viacasilina9.it` e deve reindirizzare o comunque portare al sito pubblico.
 - Non usare piu' `/sito-condominio/` nei link interni o negli asset, salvo motivazione tecnica esplicita.
 - L'area riservata documenti e' esterna: `https://documenti.viacasilina9.it`.
+- L'accesso all'area riservata e' gestito da Cloudflare Access.
+- Il modulo pubblico serve solo per raccogliere richieste di abilitazione.
+- Il modulo e' gestito tramite Google Forms.
+- Il link al modulo e' `https://forms.gle/zKkp5akqcR1q5rEZ8`.
+- La casella operativa e' `postmaster@viacasilina9.it`.
 - Non modificare la configurazione Cloudflare o Cloudflare Access.
 - Non pubblicare documenti riservati nella repository pubblica.
+- Non implementare login custom nel sito pubblico.
+- Non salvare password nel codice.
+- Non mettere liste di email autorizzate nella repository pubblica.
 - Non aggiungere autenticazione, database, backend, CMS o framework client-side pesanti.
 - Non aggiungere analytics, cookie di profilazione, banner cookie o strumenti di tracciamento senza richiesta esplicita.
+- Non incorporare iframe o script esterni Google senza richiesta esplicita.
+- Non modificare il CSS salvo necessita' minima e motivata.
 - Non aggiungere dipendenze non necessarie.
 - Mantenere il sito statico, semplice, sobrio, artigianale e pubblicabile con GitHub Pages.
-- Mantenere accessibilita', buon contrasto, navigazione chiara e focus visibile da tastiera.
+- Mantenere privacy, minimizzazione dati, accessibilita', buon contrasto, navigazione chiara e focus visibile da tastiera.
 - Usare Markdown per i contenuti, JSON per dati semplici, Nunjucks per layout e CSS scritto a mano.
 - Aggiornare `README.md` quando cambia il flusso operativo o la struttura dei contenuti.
 - Dopo ogni modifica eseguire `npm run build`.

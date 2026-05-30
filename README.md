@@ -118,6 +118,30 @@ git commit -m "Descrivi la modifica"
 git push origin main
 ```
 
+## Area riservata e richieste di abilitazione
+
+Il sito pubblico contiene una pagina dedicata all'area riservata: `/area-riservata/`.
+
+Da quella pagina:
+
+- il link di accesso porta a <https://documenti.viacasilina9.it>;
+- il link di richiesta abilitazione porta al Google Form <https://forms.gle/zKkp5akqcR1q5rEZ8>;
+- la casella operativa di riferimento e' <postmaster@viacasilina9.it>.
+
+L'area riservata e' gestita fuori da questa repository tramite Cloudflare Access. Il modulo Google Forms non abilita automaticamente nessuno: serve solo a raccogliere una richiesta. Dopo una richiesta valida, l'amministratore o il referente incaricato deve aggiungere manualmente l'email indicata nella policy Cloudflare Access.
+
+I documenti riservati non devono mai essere caricati in questa repository pubblica.
+
+Procedura per una nuova richiesta:
+
+1. Ricevere la richiesta dal Google Form.
+2. Verificare che la persona abbia diritto all'accesso.
+3. Se la richiesta e' approvata, aggiungere l'email indicata nella policy Cloudflare Access.
+4. Comunicare all'utente che puo' accedere da <https://documenti.viacasilina9.it>.
+5. Se la richiesta non e' valida, non aggiungere l'email.
+
+Il Google Form deve restare gestito da un account autorizzato e le notifiche delle nuove risposte devono arrivare alla casella operativa <postmaster@viacasilina9.it>.
+
 ## Privacy
 
 Il sito e' statico, non usa analytics, non usa cookie di profilazione, non contiene moduli di contatto e non gestisce autenticazione.

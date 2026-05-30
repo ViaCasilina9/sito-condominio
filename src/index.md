@@ -52,6 +52,14 @@ templateEngineOverride: njk,md
   </a>
 </section>
 
+<section class="content-section" aria-labelledby="area-riservata">
+<h2 id="area-riservata">Area riservata</h2>
+
+<p>I documenti condominiali riservati sono accessibili solo agli utenti abilitati.</p>
+
+<p><a class="text-link" href="area-riservata/">Accedi o richiedi abilitazione</a></p>
+</section>
+
 <section class="content-section latest-notices" aria-labelledby="ultimi-avvisi">
 <h2 id="ultimi-avvisi">Ultimi avvisi</h2>
 

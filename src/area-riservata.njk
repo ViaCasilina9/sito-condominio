@@ -1,0 +1,42 @@
+---
+layout: layouts/base.njk
+title: Area riservata
+description: "Accesso e richiesta di abilitazione all'area documenti riservati del condominio Via Casilina 9."
+permalink: /area-riservata/
+---
+<h1>Area riservata</h1>
+
+<p>Da questa pagina è possibile accedere all'area documenti riservati oppure richiedere l'abilitazione se non si è ancora registrati.</p>
+
+<h2>Sei già abilitato?</h2>
+
+<p>Se la tua email è già stata autorizzata, puoi accedere all'area riservata. Ti verrà richiesto di inserire l'indirizzo email registrato e riceverai un codice temporaneo di accesso.</p>
+
+<p>Accedi solo se hai già ricevuto conferma dell'abilitazione.</p>
+
+<p><a class="button-link" href="{{ site.reservedArea.url }}">Accedi all'area riservata</a></p>
+
+<h2>Non sei ancora abilitato?</h2>
+
+<p>Se non hai ancora accesso, puoi richiedere l'abilitazione compilando il modulo dedicato.</p>
+
+<p>La richiesta non comporta accesso automatico: i dati saranno verificati manualmente dall'amministrazione o dal referente incaricato. Dopo la verifica, l'email indicata potrà essere abilitata all'area riservata.</p>
+
+{% if site.reservedArea.registrationFormUrl %}
+<p><a class="button-link" href="{{ site.reservedArea.registrationFormUrl }}">Richiedi abilitazione</a></p>
+<p>Il modulo si apre su Google Forms. Non inviare dati non necessari, documenti di identità, codici fiscali, dati sanitari o altre informazioni non richieste.</p>
+{% else %}
+<p>Modulo in fase di attivazione. Il link al modulo di richiesta sarà disponibile a breve.</p>
+{% endif %}
+
+<h2>Come funziona l'abilitazione</h2>
+
+<ol>
+  <li>Compili il modulo di richiesta.</li>
+  <li>La richiesta viene ricevuta e verificata manualmente.</li>
+  <li>Se la richiesta è approvata, l'email indicata viene abilitata su Cloudflare Access.</li>
+  <li>Da quel momento puoi accedere all'area riservata usando la stessa email.</li>
+  <li>L'accesso avviene tramite codice temporaneo inviato via email.</li>
+</ol>
+
+<p>Per informazioni o chiarimenti puoi scrivere a <a href="mailto:{{ site.reservedArea.contactEmail }}">{{ site.reservedArea.contactEmail }}</a>.</p>
